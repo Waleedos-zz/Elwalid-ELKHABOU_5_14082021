@@ -54,32 +54,40 @@ article, aside, main {
 h1.title {
     font-size: 2rem;
     font-weight: bolder;
-    padding: 30px 5% 30px 5%;
+    padding: 40px 5px 5px 5px;
     text-align: center;
+    min-width: 350px;
 }
 
 h2.intro {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 1px 5% 30px 5%;
+    padding: 2px 5px 10px 5px;
     text-align: center;
+    min-width: 350px;
+}
+
+.our-titles {
+    min-width: 350px;
 }
 
 /* ----------------------------PRODUCTS CONTAINER---------------------------- */
 /*Card*/
-#products-container{
+#products-container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     justify-content: center;
+    padding: 40px 5% 30px 5%;
 }
 
 #productsList {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     justify-content: space-evenly;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 1px;
+    flex-wrap: wrap !important;
 }
 
 .jumbotron{
@@ -104,11 +112,11 @@ h2.intro {
     display: flex!important;
 }
 
-
+/*
 .p-2 {
     padding: .5rem!important;
 }
-
+*/
 
 .card{
     height: 400px;
@@ -123,6 +131,8 @@ h2.intro {
     background-position:-200px center;
     background-repeat: no-repeat;
     box-shadow : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-color: rgb(100, 24, 3) !important; 
+    border-radius: .25rem !important;   
 }
 
 .card:hover{
@@ -130,7 +140,7 @@ h2.intro {
     transform: scale(1.04);
     background-position: -100px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    color : rgb(218, 151, 50);
+    color : rgb(58, 24, 11);
 }
 
 #cardImg{
@@ -143,7 +153,7 @@ h2.intro {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 5px;
+    padding: 5px 5px 1px 5px !important;
     background: #fff;
     flex: 1 1 auto;
     min-height: 1px;
@@ -151,12 +161,18 @@ h2.intro {
 
 #cardTitle{
     font-size: 22px;
+    font-family: "Merienda One", cursive;
+    color: rgb(53, 52, 52);
+    font-weight: bolder;
+    margin-bottom: 10px;
 }
 
 #cardDescription{
-    font-size: 11px;
-    margin-bottom: 15px;
+    font-size: 12px;
+    margin-bottom: 40px;
     text-align: center;
+    font-family: "Merienda One", cursive;
+    color: rgb(53, 52, 52);
 }
 
 .price{
@@ -164,10 +180,13 @@ h2.intro {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
-    background-color: rgb(218, 151, 50);
-    border: none;
+    background-color: rgb(100, 24, 3);
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    border-color: black;
     text-align: center;
-    padding: 0;
+    padding: 1px;
+    margin: 0 0 1px 0;
 }
 
 #cardPrice:hover{
@@ -177,11 +196,14 @@ h2.intro {
 /*Card*/
 
 /* ----------------------------FOOTER---------------------------- */
-footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
+#footer {
     position: relative;
     font-family: var(--bs-font-sans-serif);
+}
+
+.container.py-5 {
+    padding-top: 20px !important;
+    padding-bottom: 2px !important;
 }
 
 .footer h2, h3, h4, h5, h6, p {
@@ -199,6 +221,10 @@ footer li {
     font-family: var(--bs-font-sans-serif);
 }
 
+.list-unstyled.d-flex.gap-1.justify-content-lg-center {
+    margin-bottom: 8px !important;
+}
+
 .list-unstyled {
     font-family: var(--bs-font-sans-serif);
 }
@@ -209,6 +235,7 @@ footer li {
     font-family: var(--bs-font-sans-serif);
     color: bisque;
 }
+
 
 /* ----------------------MEDIAQUERIES-------------------------*/
 
