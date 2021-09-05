@@ -10,20 +10,23 @@
         <link rel="stylesheet" href="css/media-tablet.css">
         <link rel="stylesheet" href="css/media-pixel-2xl.css">
         <link rel="stylesheet" href="css/media-mobile.css">
-
+        <link rel="shortcut icon" type="image/png" href="./images/Orinoco_logo_3.png"> 
         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <!-- Font Awesome CSS -->
+        <script src="https://kit.fontawesome.com/fbe62a62bd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <!-- Merienda Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"/>
 
         <!--Css-->
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-        
-        <!--FontAwesome Icone-->
-        <script src="https://kit.fontawesome.com/fbe62a62bd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">       
 
-        <!--Icone onglet-->
-        <link rel="shortcut icon" href="logo/icone_onglet.png">
-        
         <title>Bienvenue chez Orinoco</title>
     </head>
     <body onload="onPageLoadCameras()"> 
@@ -33,7 +36,7 @@
                 <div class="row">
                     <div class="col">
                         <nav class="navbar navbar-expand-lg navbar-dark">
-                            <a href="./index.html" class="navbar-brand">
+                            <a href="/frontend/index.html" class="navbar-brand">
                                 <i class="fa fa-2x fa-shopping-cart"></i>
                                 <span class="font-weight-bold">Orinoco </span>
                             </a>
@@ -42,10 +45,10 @@
                             </button>
                             <ul id="navbarContent" class="justify-content-end navbar-nav collapse navbar-collapse">
                                 <li class="nav-item active">
-                                    <a href="./produit.html" class="nav-link">Produits</a>
+                                    <a href="./pages/products-list.html" class="nav-link">Produits</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./panier.html" class="nav-link">Panier</a>
+                                    <a href="./pages/basket.html" class="nav-link">Panier</a>
                                 </li>
                                 <i class="fas fa-shopping-cart pt-2 mt-1"></i>
                             </ul>
@@ -55,39 +58,6 @@
             </div>
         </header>
         <!----------------------------- End Header with navigation bar ----------------------------->
-            <!------------------------------------- START BANNER ------------------------------------->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item active" style="background-image: url('images/12.jpg')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h4 class="display-4">Capturez des moments uniques</h4>
-                            <p class="lead">Nos gammes haute résolution vous offriront une qualité d'image exceptionnelle.</p>
-                        </div>
-                    </div>
-                    <!-- Slide Two - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('images/13.jpg')">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h4 class="display-4">Le Persécuteur Technologique</h4>
-                            <p class="lead">Nous vous présentons les 10 premières marques Mondiales.</p>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!------------------------------------- END BANNER ------------------------------------->        
-
         <!--Main-->
         <main id="products-container" class="l-main l-center jumbotron" role="main" aria-label="Contenu principale">
             <h1 class="title">Caméras Vintages</h1>
