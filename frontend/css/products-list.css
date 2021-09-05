@@ -88,6 +88,7 @@ h2.intro {
     width: 100%;
     padding-top: 1px;
     flex-wrap: wrap !important;
+    gap: 30px;
 }
 
 .jumbotron{
@@ -132,7 +133,7 @@ h2.intro {
     background-repeat: no-repeat;
     box-shadow : 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-color: rgb(100, 24, 3) !important; 
-    border-radius: .25rem !important;   
+    border-radius: .25rem !important;
 }
 
 .card:hover{
