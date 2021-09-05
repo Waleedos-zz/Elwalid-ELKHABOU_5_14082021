@@ -1,0 +1,78 @@
+/**Responsive Pixel 2XL 411px**/
+
+/*index*/
+@media (max-width: 467px){
+    .carousel-item.active{
+        width: 400px !important;
+    }
+
+    .img-index{
+        width: 400px;
+    }
+}
+
+/*productlist*/
+@media (max-width: 411px){
+    .title{
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+
+/*Product*/
+@media (max-width: 411px){
+
+    #cardTitleProduct{
+        margin-top: 20px;
+    }
+}
+
+/*Panier*/
+@media (max-width: 586px){
+
+    .name{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cp{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tel-mail{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact{
+        width: 20em !important;
+    }
+
+    .contact-address{
+        width: 20em !important;
+    }
+
+    .contact-tel{
+        width: 20em !important;
+    }
+
+    .contact-mail{
+        width: 20em !important ;
+    }
+    
+    .commentary{
+        width: 20em !important;
+    }
+
+    .btn-basket{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/*Order*/
+@media (max-width: 411px){
+
+}

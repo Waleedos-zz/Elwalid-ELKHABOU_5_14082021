@@ -17,7 +17,7 @@
     <!-- Merienda Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"/>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/stylus.css">
 
     <title>Orinoco</title>
 </head>
@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col">
                     <nav class="navbar navbar-expand-lg navbar-dark">
-                        <a href="./index.html" class="navbar-brand">
+                        <a href="pages/products-list.html" class="navbar-brand">
                             <i class="fa fa-2x fa-shopping-cart"></i>
                             <span class="font-weight-bold">Orinoco </span>
                         </a>
@@ -37,10 +37,10 @@
                         </button>
                         <ul id="navbarContent" class="justify-content-end navbar-nav collapse navbar-collapse">
                             <li class="nav-item active">
-                                <a href="./PageProduit.html" class="nav-link">Produits</a>
+                                <a href="./pages/products-list.html" class="nav-link">Produits</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./PagePanier.html" class="nav-link">Panier</a>
+                                <a href="./pages/basket.html" class="nav-link">Panier</a>
                             </li>
                             <i class="fas fa-shopping-cart pt-2 mt-1"></i>
                         </ul>
@@ -70,13 +70,20 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('images/carousel-2.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 class="display-4">Capturez des moments uniques</h4>
+                    <p class="lead">Nos gammes haute résolution vous offriront une qualité d'image exceptionnelle.</p>
+                </div>
+            </div>
+            <!-- Slide two - Set the background image for this slide in the line below -->
             <div class="carousel-item active" style="background-image: url('images/12.jpg')">
                 <div class="carousel-caption d-none d-md-block">
                     <h4 class="display-4">Capturez des moments uniques</h4>
                     <p class="lead">Nos gammes haute résolution vous offriront une qualité d'image exceptionnelle.</p>
                 </div>
             </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <!-- Slide Three - Set the background image for this slide in the line below -->
             <div class="carousel-item" style="background-image: url('images/13.jpg')">
                 <div class="carousel-caption d-none d-md-block">
                     <h4 class="display-4">Le Persécuteur Technologique</h4>
@@ -93,18 +100,13 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!------------------------------------- END BANNER ------------------------------------->
 
-    <!----------------------- START SECTION WHERE TO DISPLAY PRODUCTS ---------------------->
-    <section class="Vcams-container">   
-    </section> 
-    <!------------------------ END SECTION WHERE TO DISPLAY PRODUCTS ----------------------->
-    <script src="./JavaScript/Objets.js"></script>
-    <script src="./JavaScript/Index.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--JS-->    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
 </body>
 <!-- -------------------------------- Footer with links  -------------------------------- -->
@@ -133,7 +135,7 @@
                 <h2 class="text-uppercase fs-5">A propos</h2>
                 <ul class="list-unstyled">
                     <li><a href="#" class="link-light text-decoration-none">Qui sommes nous?</a></li>
-                    <li><a href="#" class="link-light text-decoration-none">Nos valeurs</a></li>
+                    <li><a href="mailto:camille.nicolas93@gmail.com" class="nav-link-footer font-weight-bold">Nous Contacter</a></li>
                     <li><a href="#" class="link-light text-decoration-none">Carrières</a></li>
                     <li><a href="#" class="link-light text-decoration-none">Mentions légales</a></li>
                     <li><a href="#" class="link-light text-decoration-none">C G V</a></li>                    
