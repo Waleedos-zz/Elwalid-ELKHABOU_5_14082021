@@ -44,7 +44,7 @@ article, aside, main {
 }
 
 h1.title {
-    font-size: 2rem;
+    font-size: 3vw;
     font-weight: bolder;
     padding: 40px 5px 5px 5px;
     text-align: center;
@@ -52,9 +52,9 @@ h1.title {
 }
 
 h2.intro {
-    font-size: 1.5rem;
+    font-size: 2.1vw;
     font-weight: bold;
-    padding: 2px 5px 10px 5px;
+    padding: 2px 5px 10px;
     text-align: center;
     min-width: 350px;
 }
@@ -74,11 +74,11 @@ h2.intro {
 
 article.jumbotron {
     padding-top: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 1px;
 }
 
 #cardImgProduct {
-    width: 30vw;
+    width: 34vw;
     height: 100%;
     margin-right: 30px;
     border: solid 0.5px rgb(100, 24, 3) !important;
@@ -90,13 +90,14 @@ article.jumbotron {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px 15% 3% 15%;
+    padding: 20px 10% 3% 10%;
 }
 
 #cardPriceProduct {
     font-family: "Merienda One", cursive;
-    font-size: larger;
+    font-size: 2vw;
     font-weight: bold;
+    color: blue;
 }
 
 .cardBodyProduct {
@@ -111,19 +112,19 @@ article.jumbotron {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 20px;
 }
 
 #cardTitleProduct {
-    font-size: 30px;
+    font-size: 2.4vw;
     font-weight: bold;
     font-family: "Merienda One", cursive;
-
 }
 
 #cardDescriptionProduct {
-    font-size: 18px;
+    font-size: 1.5vw;
     font-family: "Merienda One", cursive;
-    /*text-justify: justify;*/
+    text-justify: justify;
 }
 
 .btnAddCart {
@@ -132,7 +133,7 @@ article.jumbotron {
     flex-wrap: wrap;
     justify-content: space-evenly;
     font-family: 'Kalam', sans-serif !important;
-    padding: 30px 15% 2% 15%;
+    padding: 30px 15% 0 15%;
 }
 
 .button {
@@ -152,23 +153,26 @@ article.jumbotron {
     color: #fff !important;
 }
 
-.fas.fa-plus-circle {
+i.fas.fa-plus-circle {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.4vw;
     color: darkblue;
-    margin: 20px 10px 1px 1px;
+    margin: 0 0.8vw 0 0;
 }
 
 .fas.fa-minus-circle {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.4vw;
     color: darkblue;
-    margin: 20px 1px 1px 10px;    
+    margin: 0 0 0 0.8vw    
 }
 
 #plusOrMinusClick {
-    margin-top: 20px;
-    width: 40px;
+    width: 50px;
+}
+
+input#plusOrMinusClick {
+font-size: 1.4vw;
 }
 
 div.bordure {
@@ -177,9 +181,16 @@ div.bordure {
     height: 2px;
     margin: 0 auto; 
     width: 70%;
+} 
+
+label.font-weight-bold {
+    margin: 0 0 5px 0;
+    font-size: 1.5vw;    
 }
 
-
+select#cameraLenses.lenses-product {
+    font-size: 1.2vw;
+}
 /* ----------------------------FOOTER---------------------------- */
 #footer {
     position: relative;
@@ -222,67 +233,142 @@ footer li {
 }
 
 
+
+
 /* ----------------------MEDIAQUERIES-------------------------*/
 
 /* --------------------993px à 1400 px-----------------------*/
 @media all and (min-width:993px) and (max-width:1400px)
 {
-    .carousel-item {
-    height: 40vh;
-    min-height: 300px ;
+    h1.title {
+        font-weight: bolder;
+        padding: 15px 5px 5px 5px;
+        text-align: center;
+        min-width: 350px;
     }
 
-    .cards {
-        margin: 1em;
-        box-shadow: 0px 0px 10px 0.4px;
-        width: 45%;
+    h2.intro {
+        font-weight: bold;
+        padding: 2px 5px 10px 5px;
+        text-align: center;
+        min-width: 350px;
     }
 
-    .card-title {
-        font-size: 26px !important;
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 4% 3% 4%;
     }
 
+    article.jumbotron {
+        padding: 1rem 0 1rem 0;
+    }
 
+    #plusOrMinusClick {
+        margin-top: 10px;
+        width: 40px;
+    }
+
+    #cardTitleProduct {
+        font-weight: bold;
+        font-family: "Merienda One", cursive;
+    }
+
+    div.bordure {
+        border: 2px solid gray;
+        box-shadow: 0px 0px 15px 0.9px;
+        height: 2px;
+        margin: 0 auto; 
+        padding: 1px 0 0 0;
+        width: 100%;
+    }
+    
+    p#cardPriceProduct {
+        margin: 0 0 5px 0;
+    }
 }    
 
 /* --------------------668px à 992 px-----------------------*/
 @media all and (min-width:668px) and (max-width:992px)
 {
-    .carousel-item {
-    height: 32vh;
-    min-height: 250px ;
+    h1.title {
+        font-weight: bolder;
+        padding: 15px 5px 5px 5px;
+        text-align: center;
+        min-width: 350px;
     }
 
-    .cards {
-        margin: 1em;
-        box-shadow: 0px 0px 10px 0.4px;
-        width: 43%;
+    h2.intro {
+        font-weight: bold;
+        padding: 2px 5px 10px 5px;
+        text-align: center;
+        min-width: 350px;
     }
 
-    .card-title {
-        font-size: 26px !important;
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 1% 3% 1%;
     }
 
+    #cardImgProduct {
+        width: 50%;
+        height: 100%;
+        margin-right: 30px;
+        border: solid 0.5px rgb(100, 24, 3) !important;
+        border-radius: 10px;
+    }
 
+    .cardBodyProduct {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        font-family: "Merienda One", cursive;
+        align-items: flex-start;
+    }
 
-}
+    article.jumbotron {
+        padding: 1rem 0 1rem 0;
+    }
+
+    #plusOrMinusClick {
+        margin-top: 10px;
+        width: 40px;
+    }
+
+    #cardTitleProduct {
+        font-size: 4vw !important;
+        font-weight: bold;
+        font-family: "Merienda One", cursive;
+    }
+
+    div.bordure {
+        border: 2px solid gray;
+        box-shadow: 0px 0px 15px 0.9px;
+        height: 2px;
+        margin: 0 auto; 
+        padding: 1px 0 0 0;
+        width: 100%;
+    }
+    
+    p#cardPriceProduct {
+        margin: 0 0 5px 0;
+    }
+}   
 
 /* --------------------375px à 667 px-----------------------*/
 @media all and (min-width:375px) and (max-width:667px)
 {
-    .carousel-item {
-    height: 25vh;
-    min-height: 180px ;
-    }
-
-    .cards {
-        margin: 1em;
-        box-shadow: 0px 0px 10px 0.4px;
-        width: 90%;
-    }
-
-    .card-title {
-        font-size: 26px !important;
+    h1.title {
+        /*font-size: 2rem;*/
+        font-weight: bolder;
+        padding: 40px 5px 5px 5px;
+        text-align: center;
+        min-width: 350px;
     }
 
 
