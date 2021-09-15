@@ -113,12 +113,6 @@ h2.intro {
     display: flex!important;
 }
 
-/*
-.p-2 {
-    padding: .5rem!important;
-}
-*/
-
 .card{
     height: 400px;
     border: none;

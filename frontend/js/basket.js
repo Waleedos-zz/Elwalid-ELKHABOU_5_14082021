@@ -1,3 +1,9 @@
+// Fonction d'affichage des prix au Format Europen
+const number = 123456.789;
+
+console.log(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(number));
+// expected output: "123.456,79 €"
+
 //---------------------------------------------------------Récuperation du panier----------------------------------------------------------//
 const basketRecovery = JSON.parse(localStorage.getItem('myBasket'));
 function onLoadBasket () {
@@ -13,7 +19,7 @@ function onLoadBasket () {
         <div class="full-basket">
         <img  class="img-basket" src="${item.imageUrl}" alt="Card image">
           <div><p class="info-basket">${item.name}</p></div>
-          <div><p class="info-basket">${item.price}.00€</p></div> 
+          <div><p class="info-basket">${item.price}.00 €</p></div> 
           <div><p class="info-basket">x${item.quantity}</p></div>
           <i class="far fa-trash-alt btn-supprimer" id="btnDeleted" onclick="deleteItem(event, '${item.id}')"></i></div>
         </div>`;  
@@ -21,7 +27,7 @@ function onLoadBasket () {
   //----------------------------------------------Retour de l'affiche du prix total de la commande-------------------------------------------//
   //Afficher le prix total de la commande
   const totalPriceDisplay = `
-  <div id="total-price" class="total-cart-price"> Le prix total de vos achats est de : ${totalPrice}.00€</div>
+  <div id="total-price" class="total-cart-price"> Le prix total de vos achats est de : ${totalPrice}.00 €</div>
   `
   // On insère les produits récupérés du localstorage
   if(structureProductBasket) {
@@ -107,3 +113,4 @@ async function sendCommandToServer(order) {
       }
         return await response.json();
 }
+
