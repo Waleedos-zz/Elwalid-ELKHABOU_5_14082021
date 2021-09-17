@@ -26,10 +26,10 @@ const form = () => {
                     <textarea type="text" id="commentary" name="commentary" class="commentary" maxlength="200" title="Informations complémentaires" placeholder="Informations complémentaires à la livraison" aria-labelledby="Informations complementaires"></textarea>
                 </div>
             </div>
-            <!--Bouton validé la commande-->
-            <div class="btn-basket" role="button" aria-label="Bouton" tabindex="0">
-                <button type="submit" id="validOrder" class="button">Validé la commande</button>
-            </div>
+        <!--Bouton validé la commande-->
+        <div class="btn-basket" role="button" aria-label="Bouton" tabindex="0">
+            <button type="submit" id="validOrder" class="button">Valider la commande</button>
+        </div>
     </form>
     `;
 
