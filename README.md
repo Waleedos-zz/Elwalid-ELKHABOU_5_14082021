@@ -45,4 +45,4 @@ Le site passe le **W3C** pour HTML et CSS.
 :heavy_check_mark: Évaluation et Soutenance planifiée pour le Samedi 25 septembre 2021 à 11H00.
 
 ## Contact
-* [Email](mailto:alkhabou@gmail.com?subject=[GitHub]%20Source%20Han%20Sans)
+* [Email](mailto:alkhabou@gmail.com)
