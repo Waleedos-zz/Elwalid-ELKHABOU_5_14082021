@@ -22,7 +22,7 @@ async function onPageLoadCameras() {
 };
  
 // Fonction qui prend en paramètre la liste de caméras récupérés du serveur et 
-// crée un objet caméra qui est ajouté dans une card boostrap 
+// crée un objet caméra qui est ajouté dans une "card" boostrap 
 // l'objet caméra est créé à partir de la classe camera définie dans le fichier du fichier camera.js
 function displayCameras(cameras) {
   let mainContainer = document.getElementById('productsList');

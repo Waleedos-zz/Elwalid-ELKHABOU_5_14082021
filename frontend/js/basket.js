@@ -19,6 +19,7 @@ function onLoadBasket () {
         <div class="full-basket">
         <img  class="img-basket" src="${item.imageUrl}" alt="Card image">
           <div><p class="info-basket">${item.name}</p></div>
+          <div><p class="info-basket">${item.lense}</p></div>
           <div><p class="info-basket">${item.price}.00 €</p></div> 
           <div><p class="info-basket">x${item.quantity}</p></div>
           <i class="far fa-trash-alt btn-supprimer" id="btnDeleted" onclick="deleteItem(event, '${item.id}')"></i></div>

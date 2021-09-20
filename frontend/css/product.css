@@ -112,7 +112,6 @@ article.jumbotron {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 20px;
 }
 
 #cardTitleProduct {
@@ -168,6 +167,8 @@ i.fas.fa-plus-circle {
 }
 
 #plusOrMinusClick {
+    color: crimson;
+    font-weight: bolder;
     width: 50px;
 }
 
@@ -189,7 +190,7 @@ label.font-weight-bold {
 }
 
 select#cameraLenses.lenses-product {
-    font-size: 1.2vw;
+    font-size: 1.8vw;
 }
 /* ----------------------------FOOTER---------------------------- */
 #footer {
@@ -341,9 +342,15 @@ footer li {
     }
 
     #cardTitleProduct {
-        font-size: 4vw !important;
+        font-size: 3.6vw !important;
         font-weight: bold;
         font-family: "Merienda One", cursive;
+    }
+
+    #cardDescriptionProduct {
+        font-size: 2.1vw;
+        font-family: "Merienda One", cursive;
+        text-justify: justify;
     }
 
     div.bordure {
@@ -357,6 +364,14 @@ footer li {
     
     p#cardPriceProduct {
         margin: 0 0 5px 0;
+    }
+
+    div.bordure {
+        border: 2px solid gray;
+        box-shadow: 0px 0px 15px 0.9px;
+        height: 2px;
+        margin: 10px 0 0 0;
+        width: 100%;
     }
 }   
 
@@ -379,10 +394,11 @@ footer li {
 
     .product {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding: 20px 1% 2% 1%;
+        padding: 20px 1% 30px 1%;
     }
 
     article.jumbotron {
@@ -397,6 +413,7 @@ footer li {
     #cardTitleProduct {
         font-weight: bold;
         font-family: "Merienda One", cursive;
+        font-size: 26px;
     }
 
     div.bordure {
@@ -409,6 +426,78 @@ footer li {
     }
     
     p#cardPriceProduct {
-        margin: 0 0 5px 0;
+        margin: 0;
+        font-size: 20px;
     }
+
+    #cardImgProduct {
+        width: 90%;
+        height: 100%;
+        margin-right: 15px;
+        border: solid 0.5px rgb(100, 24, 3) !important;
+        border-radius: 10px;
+    }
+
+    .cardBodyProduct {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        font-family: "Merienda One", cursive;
+        align-items: flex-start;
+        padding-top: 15px;
+    }
+
+    #cardDescriptionProduct {
+        font-size: 18px;
+        text-align: justify;
+        font-family: "Merienda One", cursive;
+        text-justify: justify;
+        margin-bottom: 2px;
+    }
+
+    label.font-weight-bold {
+        margin: 0 0 5px 0;
+        font-size: 16px;
+    }
+
+    select#cameraLenses.lenses-product {
+        font-size: 16px;
+    }
+
+    input#plusOrMinusClick {
+        font-size: 16px;
+    }
+
+    i.fas.fa-plus-circle {
+        font-weight: 600;
+        font-size: 16px;
+        color: darkblue;
+        margin: 0 6px 0 0;
+        padding-top: 10px;
+    }
+
+    .fas.fa-minus-circle {
+        font-weight: 600;
+        font-size: 16px;
+        color: darkblue;
+        margin: 0 0 0 6px;
+        padding-top: 10px;
+    }
+
+    h1.title {
+        font-weight: bolder;
+        padding: 15px 5px 5px 5px;
+        text-align: center;
+        min-width: 350px;
+        font-size: 33px;
+    }
+
+    h2.intro {
+        font-weight: bold;
+        padding: 2px 5px 10px 5px;
+        text-align: center;
+        min-width: 350px;
+        font-size: 20px;
+    }
+
 }    

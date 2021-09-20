@@ -8,7 +8,7 @@ function getCamera() {
   const url = `http://localhost:3000/api/cameras/${cameraId}`;
   fetch(url)
   .then((httpBodyResponse) => httpBodyResponse.json())
-    .then((camera) =>{
+    .then((camera) => {
       selectedCamera = camera;
       console.log(camera);
       hydratePage();
@@ -18,7 +18,7 @@ function getCamera() {
         });
 }
 
-//Hydrater la page
+//Hydrater la page pour n'attacher que des gestionnaires d'événements.
 function hydratePage() {
     if(selectedCamera){
       let mainContainerProduct = document.getElementById('cardProduct');
