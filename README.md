@@ -15,7 +15,7 @@ Construction d’un site web e-commerce JS :
 
 ### Orinoco
 
-![Image text](https://github.com/Waleedos/Elwalid-ELKHABOU_5-2nd_14082021/tree/main/back-end/autres/logo.png)
+![Image text](https://github.com/Waleedos/Elwalid-ELKHABOU_5-2nd_14082021/blob/main/back-end/autres/logo.png)
 >Créer un premier MVP pour démontrer le fonctionnement de ses applications(Selection de produit, Panier fonctionel, Commander).  
 ## Installation
 Cloner  https://github.com/OpenClassrooms-Student-Center/JWDP5   
