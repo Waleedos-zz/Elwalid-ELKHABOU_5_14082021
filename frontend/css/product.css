@@ -150,6 +150,17 @@ article.jumbotron {
 
 #seeBasket.button a {
     color: #fff !important;
+
+}
+
+#seeBasket.button {
+    /*color: #fff !important;*/
+    background-color: darkblue;
+    font-weight: bold;
+}
+
+#back-to-list.button a {
+    color: #fff !important;
 }
 
 i.fas.fa-plus-circle {
