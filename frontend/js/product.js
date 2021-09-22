@@ -1,4 +1,4 @@
-//-------------------------------------------------Récupération des caméras de l'API avec l'id-----------------------------------------//
+//----------------Récupération des caméras de l'API avec l'id--------------------//
 //Création d'une variable pour la caméra sélectionné
 let selectedCamera;
 
@@ -27,7 +27,7 @@ function hydratePage() {
     }
 }
 
-//-----------------------------------------------------Ajout de la caméra au panier------------------------------------------------//
+//---------------------------Ajout de la caméra au panier-----------------------//
 //Sélection du bouton ajouter le produit au panier
 const btn_addCart = document.querySelector("#add_product_to_basket");
 

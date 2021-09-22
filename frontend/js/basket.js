@@ -4,7 +4,7 @@ const number = 123456.789;
 console.log(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(number));
 // expected output: "123.456,79 €"
 
-//---------------------------------------------------------Récuperation du panier----------------------------------------------------------//
+//---------------------------------------------Récuperation du panier-----------------------------------------//
 const basketRecovery = JSON.parse(localStorage.getItem('myBasket'));
 function onLoadBasket () {
   // div pour le prix
@@ -25,7 +25,7 @@ function onLoadBasket () {
           <i class="far fa-trash-alt btn-supprimer" id="btnDeleted" onclick="deleteItem(event, '${item.id}')"></i></div>
         </div>`;  
   });
-  //----------------------------------------------Retour de l'affiche du prix total de la commande-------------------------------------------//
+  //-----------------------------Retour de l'affiche du prix total de la commande-----------------------------------//
   //Afficher le prix total de la commande
   const totalPriceDisplay = `
   <div id="total-price" class="total-cart-price"> Le prix total de vos achats est de : ${totalPrice}.00 €</div>
@@ -39,7 +39,7 @@ function onLoadBasket () {
   }
 }
 
-//---------------------------------------------------------Supprimer une caméra---------------------------------------------------------------//
+//----------------------------------------------Supprimer une caméra----------------------------------------------//
 // Fonction pour supprimer l'article de la commande
 function deleteItem(event, itemId) {
   event.preventDefault();
@@ -56,7 +56,7 @@ function deleteItem(event, itemId) {
   }
 }
 
-//----------------------------------------------------------Envoie du panier et du formulaire--------------------------------------------------------//
+//---------------------------------Envoie du panier et du formulaire---------------------------------------------//
 //Fonction pour obtenir un Id de commande
 function getOrderId(responseId) {
   let orderId = responseId.orderId;

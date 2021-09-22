@@ -1,4 +1,4 @@
-//--------------------------------Récupération de l'id  et du prix total de la commande sur le localStorage----------------------------------------//
+//-------Récupération de l'id  et du prix total de la commande sur le localStorage--------//
 const orderIdRecovery = localStorage.getItem('orderId');
 const totalCommand = localStorage.getItem('totalCommand');
 

@@ -83,11 +83,23 @@ a {
 h3.valideTitle {
     font-family: 'Merienda One';
     padding-top: 15px;
+    font-weight: bolder;
+    color: red;
 }
 
 h4.valideIntro {
     font-family: 'Merienda One';
     color: blue;
+}
+
+div#total-price {
+    font-size: 24px;
+    font-weight: bolder;
+    color: brown;
+}
+
+p.pIdOrder {
+    font-size: 20px;
 }
 
 /* ----------------------------FOOTER---------------------------- */
