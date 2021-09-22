@@ -1,7 +1,6 @@
 // Fonction d'affichage des prix au Format Europen
 const number = 123456.789;
 
-console.log(new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(number));
 // expected output: "123.456,79 €"
 
 //---------------------------------------------Récuperation du panier-----------------------------------------//
@@ -60,7 +59,6 @@ function deleteItem(event, itemId) {
 //Fonction pour obtenir un Id de commande
 function getOrderId(responseId) {
   let orderId = responseId.orderId;
-  console.log(orderId);
   localStorage.setItem("orderId", orderId);
   // au clic du bouton, on arrive sur la page de confirmation
   window.location.href='../pages/confirmation.html?orderId=' + orderId;

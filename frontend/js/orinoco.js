@@ -1,4 +1,4 @@
-//-------------------------------------------------------------Récupération de la liste camera----------------------------------------------------//
+//----------------------------------Récupération de la liste camera------------------------------------------//
 
 // Fonction permettant de récupérer la liste de produit du serveur :
 // async fetch est une fonction asynchrone, 

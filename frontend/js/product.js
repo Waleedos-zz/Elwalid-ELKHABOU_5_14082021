@@ -10,7 +10,6 @@ function getCamera() {
   .then((httpBodyResponse) => httpBodyResponse.json())
     .then((camera) => {
       selectedCamera = camera;
-      console.log(camera);
       hydratePage();
       })
         .catch((error) => {
@@ -37,10 +36,8 @@ btn_addCart.addEventListener("click", (event) =>{
   alert('Vous avez ajouté le produit dans votre panier !')
 
   let selectLenses = document.getElementById("cameraLenses");
-  console.log('Lense selectionné == > ' + selectLenses.value);
 
   const quantity = document.getElementById("plusOrMinusClick").valueAsNumber;
-  console.log('La quantité selectionné == > ' + quantity);
 
   //Récupérer les données sélectionnées
   const productAdd = {
@@ -51,7 +48,6 @@ btn_addCart.addEventListener("click", (event) =>{
       lense: selectLenses.value,
       quantity
   }
-  console.log(productAdd);
 
   //Envoyer les données sélectionnées au localStorage
   let basket = JSON.parse(localStorage.getItem('myBasket'));
