@@ -39,7 +39,12 @@ _Pour le MVP, la personnalisation du produit ne sera pas fonctionnelle :_
 
 ## Notes
 L'IDE que j'ai utilisé est *Visual Studio Code*.  
-Le site passe le **W3C** pour HTML et CSS.  
+
+## Compétences évaluées
+- Créer un plan de test pour une application.
+- Interagir avec un web service avec JavaScript.
+- Valider des données issues de sources externes.
+- Gérer des événements JavaScript.
 
 ## Évaluation
 :heavy_check_mark: Évaluation et Soutenance planifiée pour le Samedi 25 septembre 2021 à 11H00.
